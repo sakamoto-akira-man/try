@@ -15,6 +15,4 @@ use App\Http\Controllers\TryController;
 */
 
 Route::get('/', [TryController::class, 'index']);
-Route::middleware('auth')->group(function () {
-     Route::get('/', [TryController::class, 'index']);
- });
+
