@@ -15,4 +15,5 @@ use App\Http\Controllers\TryController;
 */
 
 Route::get('/', [TryController::class, 'index']);
-
+Route::post('/contacts/confirm', [TryController::class, 'confirm']);
+Route::post('/contacts', [TryController::class, 'store']);

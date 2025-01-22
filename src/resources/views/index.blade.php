@@ -28,7 +28,7 @@
              @enderror
             </div>          
           </div>
-    </div>      
+        </div>      
         <div class="form__group">
           <div class="form__group-title">
             <span class="form__label--item">性別</span>
@@ -57,6 +57,11 @@
             <div class="form__input--email">
               <input type="text" name="email" placeholder="例:test@example.com" value="{{ old('email') }}" />
             </div>
+            <div class="form__error">
+              @errow('email')
+              {{ $message }}
+              @enderror
+            </div>     
           </div>         
         </div>
         <div class="form__group">
